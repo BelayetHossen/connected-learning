@@ -26,9 +26,9 @@ const Hero = () => {
                                 </p>
 
                                 <div className="flex">
-                                    <Button className="rounded-full bg-blue-500 mr-3" variant="filled">Get Started</Button>
+                                    <Button className="rounded-full bg-[#6278FF] mr-3" variant="filled">Get Started</Button>
                                     <div className="flex items-center">
-                                        <BiPlay className="rounded-full border-4  border-l-blue-500 border-e-none transition-colors duration-300 ease-linear text-5xl text-blue-500 bg-white mr-2"></BiPlay>
+                                        <BiPlay className="rounded-full border-4  border-l-[#6278FF] border-e-none transition-colors duration-300 ease-linear text-5xl text-[#6278FF] bg-white mr-2"></BiPlay>
                                         <span>Watch Video</span>
                                     </div>
                                 </div>

@@ -1,0 +1,25 @@
+
+
+const TeamCard = ({ img, name, desig }) => {
+    return (
+        <>
+            <div className='bg-white hover:shadow-xl hover:scale-95 transition duration-500 rounded-xl'>
+                <div className=''>
+
+                    <img
+                        className="w-full h-72 rounded-t-xl"
+                        src={img}
+                        alt="Image"
+                    />
+                </div>
+                <div className='bg-[#6278FF] rounded-b-xl text-center text-white py-10'>
+                    <h4 className="text-xl font-bold">{name}</h4>
+                    <p className="text-gray-300">{desig}</p>
+                </div>
+            </div>
+
+        </>
+    );
+};
+
+export default TeamCard;

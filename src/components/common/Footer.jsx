@@ -36,13 +36,13 @@ const Footer = () => {
                             <h4 className="text-xl my-5">Follow Us</h4>
 
                             <div className="flex gap-4">
-                                <div className="p-2 bg-blue-500 rounded-full">
+                                <div className="p-2 bg-[#6278FF] rounded-full">
                                     <FaLinkedinIn className=" text-white text-lg"></FaLinkedinIn>
                                 </div>
-                                <div className="p-2 bg-blue-500 rounded-full">
+                                <div className="p-2 bg-[#6278FF] rounded-full">
                                     <FaTwitter className=" text-white text-lg"></FaTwitter>
                                 </div>
-                                <div className="p-2 bg-blue-500 rounded-full">
+                                <div className="p-2 bg-[#6278FF] rounded-full">
                                     <FaFacebookF className=" text-white text-lg"></FaFacebookF>
                                 </div>
 
@@ -86,7 +86,7 @@ const Footer = () => {
                                     placeholder="Email address" />
                                 <button
                                     type="button"
-                                    className="text-white btn bg-blue-500 rounded-full px-4 py-2 absolute z-10 right-0 top-0">
+                                    className="text-white btn bg-[#6278FF] rounded-full px-4 py-2 absolute z-10 right-0 top-0">
                                     Started
                                 </button>
                             </div>

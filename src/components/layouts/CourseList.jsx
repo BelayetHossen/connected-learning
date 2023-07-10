@@ -18,7 +18,7 @@ const CourseList = () => {
                         <CourseCard img="https://s3-alpha-sig.figma.com/img/9757/dd84/7dc4c35e60544d9001c18dd4d4642c3b?Expires=1690156800&Signature=dRYIrh4cF1cIb2D1lXg0B6x7xitAu9kD8917Qy7DGvg2F-vfh4~brWFrFvMtiI6QGjxg3rpGIdj1HWmSwf5xnWbAJSu8VM6QDrBVlUlH3gnEc8HjsJQPurbhRwho5YEEMYeL63~UGdRYLAJ2DKYIHZCG9j1rM8IlRU7eXPID~7xKqQ~rPPzVLIkyNAzFRmIKA5QFLmmaKrtACmj4mTBgp4ai8tYf0FHOhl04ptdO2aQ9xW2OCsBaqhWwiCDLh5p52YN6WJ9krl0G6IVPtRhGj2GsfhYJxdJaAPDtZD~LhYtE84eWkIJdYePOOmgjn-Rx6XcEVGXhLJi2uvzFJiMxog__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" title="UI/UX Design" category="Web Design"></CourseCard>
                     </div>
                     <div className="text-center mt-8">
-                        <Button className="rounded-full bg-blue-500 mr-3 capitalize" variant="filled">View All <BiRightArrowAlt className="inline -mt-1" /></Button>
+                        <Button className="rounded-full bg-[#6278FF] mr-3 capitalize" variant="filled">View All <BiRightArrowAlt className="inline -mt-1" /></Button>
 
                     </div>
                 </div>
