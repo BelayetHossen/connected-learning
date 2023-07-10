@@ -5,7 +5,7 @@ const Hero = () => {
     return (
         <>
             <section className="">
-                <div className="pt-32 pb-14 bg-[#EDEEF3] h-[900px]">
+                <div className="pt-32 pb-14 bg-[#EDEEF3] h-[800px]">
                     <div className="container mx-auto md:px-14 px-4">
                         <div className="flex justify-between gap-24">
 
@@ -45,7 +45,7 @@ const Hero = () => {
 
                         </div>
 
-                        <div className="flex justify-between bg-white p-10 rounded-xl my-8 flex-col md:flex-row gap-4">
+                        <div className="flex justify-between bg-white p-10 rounded-xl mt-8 flex-col md:flex-row gap-4">
                             <img className="w-[140px] h-[40px]" src="../../../public/google.png" alt="" />
                             <img className="w-[140px] h-[40px]" src="../../../public/microsoft.png" alt="" />
                             <img className="w-[140px] h-[40px]" src="../../../public/lattice.png" alt="" />

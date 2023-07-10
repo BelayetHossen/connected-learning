@@ -1,5 +1,6 @@
 
 import AboutUs from "../layouts/AboutUs";
+import CourseList from "../layouts/CourseList";
 import Hero from "../layouts/Hero";
 
 
@@ -8,6 +9,7 @@ const Home = () => {
         <>
             <Hero />
             <AboutUs />
+            <CourseList />
         </>
     );
 };
