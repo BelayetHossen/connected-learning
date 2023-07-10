@@ -15,13 +15,11 @@ const Footer = () => {
 
     return (
         <>
-
-
-            <footer className="relative w-full py-20 bg-[#132742]">
+            <footer className="relative w-full py-20 bg-[#132742] mt-8">
                 <div className="mx-auto w-full max-w-7xl px-8">
-                    <div className="flex justify-between gap-10">
+                    <div className="flex flex-col md:flex-row justify-between gap-10">
 
-                        <div className="w-1/4 text-gray-100">
+                        <div className="md:w-1/4 text-gray-100">
                             <Typography className="mb-6">
                                 <img className="w-32" src="../../../public/logo.svg" alt="Logo" />
                             </Typography>
@@ -51,7 +49,7 @@ const Footer = () => {
 
                         </div>
 
-                        <div className="w-2/4 grid grid-cols-2 justify-between gap-4 text-gray-100">
+                        <div className="md:w-2/4 grid grid-cols-2 justify-between gap-4 text-gray-100">
 
                             {LINKS.map(({ title, items }) => (
                                 <ul key={title}>
@@ -77,7 +75,7 @@ const Footer = () => {
 
                         </div>
 
-                        <div className="w-1/4 text-gray-100">
+                        <div className="md:w-1/4 text-gray-100">
 
                             <div className="relative mb-4">
                                 <input
@@ -98,11 +96,6 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-
-
-
-
-
                 </div>
             </footer>
 

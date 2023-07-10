@@ -4,6 +4,7 @@ import Categories from "../layouts/Categories";
 import CourseList from "../layouts/CourseList";
 import Hero from "../layouts/Hero";
 import PopulerTeacher from "../layouts/PopulerTeacher";
+import Testimonials from "../layouts/Testimonials";
 
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
             <CourseList />
             <Categories />
             <PopulerTeacher />
+            <Testimonials />
         </>
     );
 };

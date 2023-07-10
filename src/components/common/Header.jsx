@@ -1,5 +1,6 @@
+import { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
-import { useState, useEffect } from "react";
 import {
     MobileNav,
     Typography,
@@ -10,6 +11,22 @@ import { Link } from "react-router-dom";
 
 export default function Example() {
     const [openNav, setOpenNav] = useState(false);
+    const location = useLocation();
+    const pathName = location.pathname;
+
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.pageYOffset > 0);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+    const bgClass = isScrolled ? 'bg-white' : '';
+
 
     useEffect(() => {
         window.addEventListener("resize", () => window.innerWidth >= 960 && setOpenNav(false));
@@ -19,54 +36,54 @@ export default function Example() {
         <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
             <Typography
                 as="li"
-                className="p-1 font-bold hover:text-[#6278FF]"
+                className={`p-1 font-bold hover:text-[#6278FF]  ${pathName == '/' ? 'text-[#6278FF]' : ''}`}
             >
                 <div className="group relative">
                     <Link to="/" className="flex items-center">
                         Home
                     </Link>
-                    <div className="border-t-2 border-[#6278FF] w-6 h-1 bg-[#6278FF] absolute left-0 bottom-0 transform translate-x-full opacity-0 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></div>
+                    <div className={`border-t-2 border-[#6278FF] w-6 h-1 bg-[#6278FF] absolute left-0 bottom-0 transform translate-x-full opacity-0 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 ${pathName == '/' ? 'opacity-100' : ''}`}></div>
                 </div>
             </Typography>
             <Typography
                 as="li"
-                className="p-1 font-bold hover:text-[#6278FF]"
+                className={`p-1 font-bold hover:text-[#6278FF]  ${pathName == '/about' ? 'text-[#6278FF]' : ''}`}
             >
                 <div className="group relative">
                     <Link to="/about" className="flex items-center">
                         About
                     </Link>
-                    <div className="border-t-2 border-[#6278FF] w-6 h-1 bg-[#6278FF] absolute left-0 bottom-0 transform translate-x-full opacity-0 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></div>
+                    <div className={`border-t-2 border-[#6278FF] w-6 h-1 bg-[#6278FF] absolute left-0 bottom-0 transform translate-x-full opacity-0 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 ${pathName == '/about' ? 'opacity-100' : ''}`}></div>
                 </div>
             </Typography>
             <Typography
                 as="li"
-                className="p-1 font-bold hover:text-[#6278FF]"
+                className={`p-1 font-bold hover:text-[#6278FF]  ${pathName == '/course' ? 'text-[#6278FF]' : ''}`}
             >
                 <div className="group relative">
                     <Link to="/course" className="flex items-center">
                         Course
                     </Link>
-                    <div className="border-t-2 border-[#6278FF] w-6 h-1 bg-[#6278FF] absolute left-0 bottom-0 transform translate-x-full opacity-0 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></div>
+                    <div className={`border-t-2 border-[#6278FF] w-6 h-1 bg-[#6278FF] absolute left-0 bottom-0 transform translate-x-full opacity-0 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 ${pathName == '/course' ? 'opacity-100' : ''}`}></div>
                 </div>
             </Typography>
             <Typography
                 as="li"
-                className="p-1 font-bold hover:text-[#6278FF]"
+                className={`p-1 font-bold hover:text-[#6278FF]  ${pathName == '/contact' ? 'text-[#6278FF]' : ''}`}
             >
                 <div className="group relative">
                     <Link to="/contact" className="flex items-center">
                         Contact
                     </Link>
-                    <div className="border-t-2 border-[#6278FF] w-6 h-1 bg-[#6278FF] absolute left-0 bottom-0 transform translate-x-full opacity-0 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></div>
+                    <div className={`border-t-2 border-[#6278FF] w-6 h-1 bg-[#6278FF] absolute left-0 bottom-0 transform translate-x-full opacity-0 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 ${pathName == '/contact' ? 'opacity-100' : ''}`}></div>
                 </div>
             </Typography>
         </ul>
     );
 
     return (
-        <div className="font-Poppins w-full m-0">
-            <div className="fixed top-0 left-0 right-0 z-50">
+        <div className="w-full m-0">
+            <div className={`${pathName == '/' ? '' : 'bg-white'} fixed top-0 left-0 right-0 z-50 ${bgClass}`}>
                 <div className="container mx-auto md:px-14 px-4 py-4">
                     <div className="flex items-center justify-between text-blue-gray-900">
                         <Link
@@ -120,7 +137,7 @@ export default function Example() {
                         </IconButton>
                     </div>
                     <MobileNav open={openNav}>
-                        <div className="container mx-auto">
+                        <div className="container mx-auto bg-[#fdfdfdec] p-4">
                             {navList}
                             <div className="flex items-center pr-2">
                                 <Button variant="outlined" className='rounded-full mr-3 capitalize'>Login</Button>
