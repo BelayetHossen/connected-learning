@@ -15,7 +15,7 @@ const Footer = () => {
 
     return (
         <>
-            <footer className="relative w-full py-20 bg-[#132742] mt-8">
+            <footer className="relative w-full py-20 bg-[#132742]">
                 <div className="mx-auto w-full max-w-7xl px-8">
                     <div className="flex flex-col md:flex-row justify-between gap-10">
 
