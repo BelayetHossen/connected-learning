@@ -1,9 +1,12 @@
 
+import Hero from "../layouts/Hero";
+
 
 const Home = () => {
     return (
         <>
-            <div>Home</div>
+            <Hero />
+
         </>
     );
 };

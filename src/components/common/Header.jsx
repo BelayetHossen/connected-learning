@@ -21,33 +21,45 @@ export default function Example() {
                 as="li"
                 className="p-1 font-bold hover:text-blue-500"
             >
-                <Link to="/" className="flex items-center">
-                    Home
-                </Link>
+                <div className="group relative">
+                    <Link to="/" className="flex items-center">
+                        Home
+                    </Link>
+                    <div className="border-t-2 border-blue-500 w-6 h-1 bg-blue-500 absolute left-0 bottom-0 transform translate-x-full opacity-0 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></div>
+                </div>
             </Typography>
             <Typography
                 as="li"
                 className="p-1 font-bold hover:text-blue-500"
             >
-                <Link to="/about" className="flex items-center">
-                    About
-                </Link>
+                <div className="group relative">
+                    <Link to="/about" className="flex items-center">
+                        About
+                    </Link>
+                    <div className="border-t-2 border-blue-500 w-6 h-1 bg-blue-500 absolute left-0 bottom-0 transform translate-x-full opacity-0 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></div>
+                </div>
             </Typography>
             <Typography
                 as="li"
                 className="p-1 font-bold hover:text-blue-500"
             >
-                <Link to="/course" className="flex items-center">
-                    Course
-                </Link>
+                <div className="group relative">
+                    <Link to="/course" className="flex items-center">
+                        Course
+                    </Link>
+                    <div className="border-t-2 border-blue-500 w-6 h-1 bg-blue-500 absolute left-0 bottom-0 transform translate-x-full opacity-0 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></div>
+                </div>
             </Typography>
             <Typography
                 as="li"
                 className="p-1 font-bold hover:text-blue-500"
             >
-                <Link to="/contact" className="flex items-center">
-                    Contact
-                </Link>
+                <div className="group relative">
+                    <Link to="/contact" className="flex items-center">
+                        Contact
+                    </Link>
+                    <div className="border-t-2 border-blue-500 w-6 h-1 bg-blue-500 absolute left-0 bottom-0 transform translate-x-full opacity-0 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></div>
+                </div>
             </Typography>
         </ul>
     );
