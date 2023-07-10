@@ -45,7 +45,7 @@ const Hero = () => {
 
                         </div>
 
-                        <div className="flex justify-between bg-white p-10 rounded-xl my-8">
+                        <div className="flex justify-between bg-white p-10 rounded-xl my-8 flex-col md:flex-row gap-4">
                             <img className="w-[140px] h-[40px]" src="../../../public/google.png" alt="" />
                             <img className="w-[140px] h-[40px]" src="../../../public/microsoft.png" alt="" />
                             <img className="w-[140px] h-[40px]" src="../../../public/lattice.png" alt="" />
