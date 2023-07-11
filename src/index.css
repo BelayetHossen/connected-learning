@@ -6,5 +6,52 @@
 * {
     margin: 0;
     padding: 0;
-    /* color: #fdfdfdec; */
+}
+
+
+/* This is for moving icon css of hero section */
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(30px);
+    }
+}
+
+.moving-try {
+    animation: move 2s infinite alternate linear;
+}
+
+.moving-mouse {
+    animation: move 2.5s infinite alternate linear;
+}
+
+.moving-victor {
+    animation: move 3s infinite alternate linear;
+}
+
+.moving-extra {
+    animation: move 1.5s infinite alternate linear;
+}
+
+
+
+/* This is for rectangle css */
+
+@media screen and (min-width: 719px) and (max-width: 959px) {
+    .rectangle {
+        width: 280px !important;
+        height: 170px;
+    }
+
+}
+
+@media screen and (min-width: 960px) and (max-width: 1139px) {
+    .rectangle {
+        width: 400px !important;
+        height: 250px;
+    }
+
 }

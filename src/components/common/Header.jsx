@@ -83,14 +83,14 @@ export default function Example() {
 
     return (
         <div className="w-full m-0">
-            <div className={`${pathName == '/' ? '' : 'bg-white'} fixed top-0 left-0 right-0 z-50 ${bgClass}`}>
+            <div className={`${pathName == '/' ? '' : 'bg-white'} fixed top-0 left-0 right-0 z-[100] ${bgClass}`}>
                 <div className="container mx-auto md:px-14 px-4 py-4">
                     <div className="flex items-center justify-between text-blue-gray-900">
                         <Link
                             to="/"
                             className="mr-4 cursor-pointer py-1.5 font-medium"
                         >
-                            <img className="w-32" src="../../../public/logo.svg" alt="Logo" />
+                            <img className="w-32" src="https://i.ibb.co/8j0w3px/logo.png" alt="Logo" />
                         </Link>
                         <div className="hidden lg:block">{navList}</div>
                         <div className="flex items-center pr-2 hidden lg:block">

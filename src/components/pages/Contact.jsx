@@ -2,17 +2,19 @@ import { Button } from "@material-tailwind/react";
 import PageHeader from "../common/PageHeader";
 import SectionTitle2 from "../common/SectionTitle2";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 
 const Contact = () => {
     return (
         <>
+            <Helmet><title>Contact Us | Connected Learning </title></Helmet>
             <PageHeader banner="https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" title="Contact"></PageHeader>
             <div className="bg-[#EDEEF3]">
                 <div className="container mx-auto md:px-14 px-4 py-14">
                     <div className="py-10">
                         <SectionTitle2 sub="Contact Us" title="Our Company Contact Now"></SectionTitle2>
-                        <div className="flex flex-col md:flex-row justify-between gap:10 mt-14">
+                        <div className="flex flex-col-reverse md:flex-row justify-between items-center gap:10 mt-14">
                             <div className="md:w-1/3">
                                 <h3 className="text-2xl font-bold">Get In Touch With Us</h3>
                                 <p className="text-gray-600 py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt.</p>
@@ -45,7 +47,7 @@ const Contact = () => {
 
                             </div>
                             <div className="md:w-1/2">
-                                <img className="w-full" src="https://alshifaeye.org/assets/images/contact-us.png" alt="Image" />
+                                <img src="https://i.ibb.co/kB9DyNW/contact.png" alt="" />
                             </div>
                         </div>
                     </div>

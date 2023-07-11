@@ -17,13 +17,13 @@ const Footer = () => {
         <>
             <footer className="relative w-full py-20 bg-[#132742]">
                 <div className="mx-auto w-full max-w-7xl px-8">
-                    <div className="flex flex-col md:flex-row justify-between gap-10">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between gap-14">
 
-                        <div className="md:w-1/4 text-gray-100">
+                        <div className="text-gray-100">
                             <Typography className="mb-6">
-                                <img className="w-32" src="../../../public/logo.svg" alt="Logo" />
+                                <img className="w-32" src="https://i.ibb.co/8j0w3px/logo.png" alt="Logo" />
                             </Typography>
-                            <p className="mb-4 flex items-center justify-center md:justify-start">
+                            <p className="mb-4 flex items-center md:justify-start md:w-4/5 w-full">
                                 Lorem ipsum dolor sit amet, consectetur adip
                                 iscing elit, sed do.
                             </p>
@@ -34,13 +34,13 @@ const Footer = () => {
                             <h4 className="text-xl my-5">Follow Us</h4>
 
                             <div className="flex gap-4">
-                                <div className="p-2 bg-[#6278FF] rounded-full">
+                                <div className="p-2 bg-[#6278FF] rounded-full hover:bg-[#F8781F] transition duration-1000 cursor-pointer">
                                     <FaLinkedinIn className=" text-white text-lg"></FaLinkedinIn>
                                 </div>
-                                <div className="p-2 bg-[#6278FF] rounded-full">
+                                <div className="p-2 bg-[#6278FF] rounded-full hover:bg-[#F8781F] transition duration-1000 cursor-pointer">
                                     <FaTwitter className=" text-white text-lg"></FaTwitter>
                                 </div>
-                                <div className="p-2 bg-[#6278FF] rounded-full">
+                                <div className="p-2 bg-[#6278FF] rounded-full hover:bg-[#F8781F] transition duration-1000 cursor-pointer">
                                     <FaFacebookF className=" text-white text-lg"></FaFacebookF>
                                 </div>
 
@@ -49,7 +49,7 @@ const Footer = () => {
 
                         </div>
 
-                        <div className="md:w-2/4 grid grid-cols-2 justify-between gap-4 text-gray-100">
+                        <div className="grid grid-cols-2 justify-between gap-4 text-gray-100">
 
                             {LINKS.map(({ title, items }) => (
                                 <ul key={title}>
@@ -75,7 +75,7 @@ const Footer = () => {
 
                         </div>
 
-                        <div className="md:w-1/4 text-gray-100">
+                        <div className="text-gray-100">
 
                             <div className="relative mb-4">
                                 <input

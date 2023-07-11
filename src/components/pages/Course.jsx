@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import CourseCard from "../common/CourseCard";
 import PageHeader from "../common/PageHeader";
 import SectionTitle2 from "../common/SectionTitle2";
@@ -6,6 +7,7 @@ import SectionTitle2 from "../common/SectionTitle2";
 const Course = () => {
     return (
         <>
+            <Helmet><title>All Courses | Connected Learning </title></Helmet>
             <PageHeader banner="https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" title="Course"></PageHeader>
             <div className="bg-[#EDEEF3]">
                 <div className="container mx-auto md:px-14 px-4 py-14">

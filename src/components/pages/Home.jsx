@@ -1,4 +1,5 @@
 
+import { Helmet } from "react-helmet";
 import AboutUs from "../layouts/AboutUs";
 import Categories from "../layouts/Categories";
 import CourseList from "../layouts/CourseList";
@@ -10,6 +11,7 @@ import Testimonials from "../layouts/Testimonials";
 const Home = () => {
     return (
         <>
+            <Helmet><title>Home | Connected Learning </title></Helmet>
             <Hero />
             <AboutUs />
             <CourseList />
