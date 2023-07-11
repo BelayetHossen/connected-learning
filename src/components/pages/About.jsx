@@ -9,7 +9,7 @@ const About = () => {
     return (
         <>
             <Helmet><title>About Us | Connected Learning </title></Helmet>
-            <PageHeader banner="https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" title="About"></PageHeader>
+            <PageHeader banner="https://i.ibb.co/D8CyGYd/about-banner.png" title="About"></PageHeader>
             <WhyUs />
             <Mission />
             <Teams />

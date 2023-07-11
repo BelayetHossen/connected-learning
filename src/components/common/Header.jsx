@@ -93,9 +93,11 @@ export default function Example() {
                             <img className="w-32" src="https://i.ibb.co/8j0w3px/logo.png" alt="Logo" />
                         </Link>
                         <div className="hidden lg:block">{navList}</div>
-                        <div className="flex items-center pr-2 hidden lg:block">
-                            <Button variant="outlined" className='rounded-full mr-3 capitalize'>Login</Button>
-                            <Button variant="filled" className=' rounded-full capitalize'>Sign Up</Button>
+                        <div className="flex pr-2 hidden lg:block">
+                            <button className="border border-[#6278FF] text-[#6278FF] rounded-full px-6 py-[7px] mr-3 capitalize text-md font-bold">
+                                Login
+                            </button>
+                            <Button variant="filled" className='bg-[#6278FF] rounded-full capitalize -mt-1'>Sign Up</Button>
 
                         </div>
                         <IconButton
@@ -140,8 +142,10 @@ export default function Example() {
                         <div className="container mx-auto bg-[#fdfdfdec] p-4">
                             {navList}
                             <div className="flex items-center pr-2">
-                                <Button variant="outlined" className='rounded-full mr-3 capitalize'>Login</Button>
-                                <Button variant="filled" className=' rounded-full capitalize'>Sign Up</Button>
+                                <button className="border border-[#6278FF] text-[#6278FF] rounded-full px-6 py-[7px] mr-3 capitalize text-md font-bold">
+                                    Login
+                                </button>
+                                <Button variant="filled" className='bg-[#6278FF] rounded-full capitalize -mt-1'>Sign Up</Button>
 
                             </div>
                         </div>

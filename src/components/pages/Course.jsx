@@ -8,7 +8,7 @@ const Course = () => {
     return (
         <>
             <Helmet><title>All Courses | Connected Learning </title></Helmet>
-            <PageHeader banner="https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" title="Course"></PageHeader>
+            <PageHeader banner="https://i.ibb.co/SmzFKyR/course-banner.png" title="Course"></PageHeader>
             <div className="bg-[#EDEEF3]">
                 <div className="container mx-auto md:px-14 px-4 py-14">
                     <div className="py-10">
