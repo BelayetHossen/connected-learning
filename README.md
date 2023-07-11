@@ -12,14 +12,6 @@ Check out the live demo of the project: [Connected Learning](https://connected-l
 - Tailwind CSS
 - Material UI
 
-## Features
-
-- User authentication and registration
-- Course catalog with search and filtering options
-- Interactive course content and progress tracking
-- Discussion forum for students and instructors
-- Messaging system for communication between users
-- User profile customization
 
 ## Getting Started
 
