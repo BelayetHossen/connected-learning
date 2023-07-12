@@ -2,10 +2,9 @@ import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 
 import {
-    MobileNav,
     Typography,
-    Button,
     IconButton,
+    Collapse,
 } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
 
@@ -39,7 +38,7 @@ export default function Example() {
                 className={`p-1 font-bold hover:text-[#6278FF]  ${pathName == '/' ? 'text-[#6278FF]' : ''}`}
             >
                 <div className="group relative">
-                    <Link to="/" className="flex items-center">
+                    <Link to={'/'} className="flex items-center">
                         Home
                     </Link>
                     <div className={`border-t-2 border-[#6278FF] w-6 h-1 bg-[#6278FF] absolute left-0 bottom-0 transform translate-x-full opacity-0 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 ${pathName == '/' ? 'opacity-100' : ''}`}></div>
@@ -94,10 +93,12 @@ export default function Example() {
                         </Link>
                         <div className="hidden lg:block">{navList}</div>
                         <div className="flex pr-2 hidden lg:block">
-                            <button className="border border-[#6278FF] text-[#6278FF] rounded-full px-6 py-[7px] mr-3 capitalize text-md font-bold">
+                            <button className="border border-[#6278FF] text-[#6278FF] hover:bg-[#F8781F] rounded-full px-6 py-[7px] mr-3 capitalize text-md font-bold">
                                 Login
                             </button>
-                            <Button variant="filled" className='bg-[#6278FF] rounded-full capitalize -mt-1'>Sign Up</Button>
+                            <button className="border border-[#6278FF] bg-[#6278FF] hover:bg-[#3b4cbd] text-white rounded-full px-6 py-[7px] mr-3 capitalize text-md font-bold">
+                                Sign Up
+                            </button>
 
                         </div>
                         <IconButton
@@ -138,18 +139,19 @@ export default function Example() {
                             )}
                         </IconButton>
                     </div>
-                    <MobileNav open={openNav}>
+                    <Collapse open={openNav}>
                         <div className="container mx-auto bg-[#fdfdfdec] p-4">
                             {navList}
                             <div className="flex items-center pr-2">
-                                <button className="border border-[#6278FF] text-[#6278FF] rounded-full px-6 py-[7px] mr-3 capitalize text-md font-bold">
+                                <button className="border border-[#6278FF] text-[#6278FF] hover:bg-[#F8781F] rounded-full px-6 py-[7px] mr-3 capitalize text-md font-bold">
                                     Login
                                 </button>
-                                <Button variant="filled" className='bg-[#6278FF] rounded-full capitalize -mt-1'>Sign Up</Button>
-
+                                <button className="border border-[#6278FF] bg-[#6278FF] hover:bg-[#3b4cbd] text-white rounded-full px-6 py-[7px] mr-3 capitalize text-md font-bold">
+                                    Sign Up
+                                </button>
                             </div>
                         </div>
-                    </MobileNav>
+                    </Collapse>
                 </div>
             </div>
         </div>

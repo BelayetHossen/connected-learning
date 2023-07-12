@@ -38,7 +38,31 @@
 
 
 
-/* This is for rectangle css */
+/* This is for about us section img rectangle css */
+
+@media screen and (max-width: 412px) {
+    .about-us-img {
+        width: 250px !important;
+    }
+
+    .rectangle {
+        width: 200px !important;
+        height: 180px;
+    }
+
+}
+
+@media screen and (min-width: 405px) and (max-width: 718px) {
+    .about-us-img {
+        width: 320px !important;
+    }
+
+    .rectangle {
+        width: 320px !important;
+        height: 230px;
+    }
+
+}
 
 @media screen and (min-width: 719px) and (max-width: 959px) {
     .rectangle {

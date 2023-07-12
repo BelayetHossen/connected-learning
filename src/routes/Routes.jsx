@@ -35,6 +35,6 @@ export const router = createBrowserRouter([
 
     {
         path: '/*',
-        element: "hhhh",
+        element: <div>This is not vallid Route</div>,
     },
 ])

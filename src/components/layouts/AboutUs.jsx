@@ -7,11 +7,11 @@ const AboutUs = () => {
                 <div className="relative md:w-1/2">
                     <div className="h-[370px]"></div>
                     <img
-                        className="absolute top-8 right-10 w-full md:w-[500px] rounded-xl z-20"
+                        className="absolute top-8 right-10 w-full md:w-[500px] rounded-xl z-20 about-us-img"
                         src="https://s3-alpha-sig.figma.com/img/27ed/32db/c45408ff39d286e024f2ec1ded56c841?Expires=1690156800&Signature=JVysK-V23zsimHj5hpyxHPpIUOwWqJZHpEQf~1zxVYy7uBS~bW8dalSqILd7d9uHaXM8JvChMf~tpScT9-z7241V2v~~RKEga-tFhau0YsU8CZMotiPvspv~RVNKGq-NJySGrDuTRVg~CYVfRykPhwb-wtgNPGobnQcC2o2AH-sr2UWizxrx-FDL5EqDmPEGHdEwOQ-jJz3r8o2DO0tPRJ3JKwHKNivFpqu31TjwWbpFPiVXh1-qMySKHImLgy0bW0VELsPNJECY2O~7a3fgrknIOCMj6pRPkbsawAFP0fJ7JbksU6ZdIQFIRXxKEJkKQNQszwfyGTFs4WSnLJcknQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
                         alt=""
                     />
-                    <div className="absolute top-14 left-0 w-full md:w-[500px] h-[350px] rounded-xl bg-transparent border-2 border-[#6278FF] hidden md:block rectangle" />
+                    <div className="absolute top-14 left-0 w-full md:w-[500px] h-[350px] rounded-xl bg-transparent border-2 border-[#6278FF] rectangle" />
                     <img
                         className="absolute top-1 right-1 w-[200px] rounded-xl z-10"
                         src="https://s3-alpha-sig.figma.com/img/3d3d/7c73/6007e04735acdb524f86f44e3afec5c4?Expires=1690156800&Signature=VcznhPcWBdiLHUJC2yjKv0XpwFygMMqAw114PcNumDpLDztCSQ4jBKkRCdUcjbMAWOtarGJDs~Q5trUWnvVEuZqWr478XB~VyAr10QVmrpIYokkTyVEpnVJfRhh2fEHpofiv5mXxB8bVmvsv~yHqmBorjaUh5KPoV~Dop8wfqnobu2jFTfA1eV6O48zYMxp347H5bna8Etns7TWSQ19ELeNAbXYEX42fKmMdxt5MsTV9wMAHNDTNOPbk0HFChJjUakK2pELNz59NSfN~-KzlatCh79QA4IdwkOAflZS~9jOYZ3pyHkVcNvVdumoUZZHEf1DEiqNxhgtDWk6guW~pQQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"

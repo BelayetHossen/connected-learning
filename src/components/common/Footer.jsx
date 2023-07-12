@@ -21,7 +21,7 @@ const Footer = () => {
 
                         <div className="text-gray-100">
                             <Typography className="mb-6">
-                                <img className="w-32" src="https://i.ibb.co/8j0w3px/logo.png" alt="Logo" />
+                                <img className="w-[180px]" src="https://i.ibb.co/8j0w3px/logo.png" alt="Logo" />
                             </Typography>
                             <p className="mb-4 flex items-center md:justify-start md:w-4/5 w-full">
                                 Lorem ipsum dolor sit amet, consectetur adip
