@@ -8,7 +8,7 @@ const PopulerTeacher = () => {
             <div className="bg-[#EDEEF3]">
                 <div className="container mx-auto md:px-14 px-4 py-14">
                     <SectionTitle2 sub="Team Member" title="Popular Professional Teachers"></SectionTitle2>
-                    <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
+                    <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-8">
                         <TeamCard img="https://i.ibb.co/3yyQpJf/team-1.jpg" name="Pushpa Kanon" desig="CEO, derhab"></TeamCard>
                         <TeamCard img="https://i.ibb.co/thsQLSt/team-2.jpg" name="Lolona khan" desig="UI Designer"></TeamCard>
                         <TeamCard img="https://i.ibb.co/Mfg4BtZ/team-3.jpg" name="Jahangiri khan" desig="UX Designer"></TeamCard>

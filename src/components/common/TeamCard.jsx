@@ -7,7 +7,7 @@ const TeamCard = ({ img, name, desig }) => {
                 <div className=''>
 
                     <img
-                        className="w-full h-72 rounded-t-xl"
+                        className="w-full h-[450px] sm:h-[450px] md:h-[350px] lg:h-[290px] xl:h-[300px] rounded-t-xl"
                         src={img}
                         alt="Image"
                     />
