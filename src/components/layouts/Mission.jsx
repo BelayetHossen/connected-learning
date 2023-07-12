@@ -26,8 +26,8 @@ const Mission = () => {
                         <Button className="rounded-full bg-[#6278FF] capitalize mt-10" variant="filled">Join Our Team</Button>
                     </div>
                     <div className="relative">
-                        <img className="md:w-[470px] w-2/3 rounded-xl" src="https://i.ibb.co/1dRFtTS/mission.jpg" alt="Image" />
-                        <div className="py-4 px-10 bg-white rounded-lg absolute bottom-20 -left-32">
+                        <img className="w-full md:w-[470px] w-2/3 rounded-xl" src="https://i.ibb.co/1dRFtTS/mission.jpg" alt="Image" />
+                        <div className="py-4 px-10 bg-white rounded-lg absolute bottom-10 md:bottom-[21rem] lg:bottom-56 lg:-left-10 xl:-left-20">
                             <h3 className="font-bold text-xl">MST: Alonker lon</h3>
                             <p className="text-[#6278FF]">CEO,Education LTD</p>
                         </div>
